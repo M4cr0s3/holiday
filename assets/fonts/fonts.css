@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Monts';
+    src: url(./Monts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Sans';
+    src: url(./Sans/NotoSansJP-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Sans';
+    src: url(./Sans/NotoSansJP-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
