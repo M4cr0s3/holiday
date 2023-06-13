@@ -14,17 +14,17 @@
     <section class="main_screen">
         <div class="wrapper">
             <header class="header">
-                <div class="container d-flex jcsb align-cent">
-                    <div class="logo"></div>
-                    <nav class="">
-                        <ul class="d-flex nav">
-                            <li><a href="">Акции</a></li>
-                            <li><a href="">Поиск</a></li>
-                            <li><a href="booking.html">Управление бронированием</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            <div class="container d-flex jcsb align-cent">
+                <div class="logo"></div>
+                <nav class="">
+                    <ul class="d-flex nav">
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Поиск</a></li>
+                        <li><a href="booking.html">Управление бронированием</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
             <div class="container" id="c2">
                 <div class="col-12">
@@ -147,7 +147,7 @@
                     <!--                    </p>-->
 
                 </div>
-                <div class="col-6 d-flex jcc">
+                <div class="col-6 d-flex jcc bb">
                     <img src="./assets/imgs/for_logo/bb.png" alt="">
                 </div>
             </div>
@@ -158,7 +158,7 @@
                 <div class="grid-rev">
                     <div class="review" id="rev1">
                         <div class="user-info d-flex align-end">
-                            <div class="user-avatar">
+                            <div class="user-avatar d-flex jcc align-end">
                                 <img src="./assets/imgs/user-solid.svg" alt="">
                             </div>
                             <a href="#" class="user-name">
@@ -176,7 +176,7 @@
                     </div>
                     <div class="review" id="rev2">
                         <div class="user-info d-flex align-end">
-                            <div class="user-avatar">
+                            <div class="user-avatar d-flex jcc align-end">
                                 <img src="./assets/imgs/user-solid.svg" alt="">
                             </div>
                             <a href="#" class="user-name">
@@ -196,7 +196,7 @@
                     </div>
                     <div class="review" id="rev3">
                         <div class="user-info d-flex align-end">
-                            <div class="user-avatar">
+                            <div class="user-avatar d-flex jcc align-end">
                                 <img src="./assets/imgs/user-solid.svg" alt="">
                             </div>
                             <a href="#" class="user-name">
@@ -213,7 +213,7 @@
                     </div>
                     <div class="review" id="rev4">
                         <div class="user-info d-flex align-end">
-                            <div class="user-avatar">
+                            <div class="user-avatar d-flex jcc align-end">
                                 <img src="./assets/imgs/user-solid.svg" alt="">
                             </div>
                             <a href="#" class="user-name">
@@ -244,29 +244,164 @@
             <p class="desc desc-sm">Заполните простую форму и выберите лучший вариант!</p>
         </div>
         <div class="container">
-            <form action="" class="d-flex flex-col mt-4 method="post">
+            <form action="" class="d-flex flex-col mt-4" method="post">
                 <select name="" id="" class="select-control">
                     <option selected>Выберите регион</option>
-                    <option>Нижний Новгород</option>
-                    <option>Краснодар</option>
+                    <option>Алтайский край</option>
+                    <option>Красноярский край</option>
                     <option>Москва</option>
+                    <option>Нижний Новгород</option>
                 </select>
                 <input type="date" class="form-control mt-1" placeholder="Дата мероприятия">
                 <input type="text" class="form-control mt-1" placeholder="Введите количество человек">
-                <button class="btn-sub mt-3">Поиск</button>
+                <a href="search.html" class="btn-sub mt-3" type="submit">Поиск</a>
             </form>
         </div>
     </section>
     <section class="stocks">
+        <div class="col-12">
+            <h1 class="title title-sm">Текущие акции</h1>
+        </div>
+        <div class="container ">
+            <div class="row mt-4">
+                <div class="stock d-flex">
+                    <div class="col-6 stock-image">
+                        <img src="./assets/imgs/promotions/promotion1.jpg" alt="">
+                    </div>
+                    <div class="col-6 stock-text d-flex flex-col">
+                        <h2 class="title title-sm">
+                            Скидка до 60%. За заказ зоны (от 25 человек) в локации «Черная
+                            жемчужина»
+                        </h2>
+                        <div class="stock-body desc desc-sm">
+                            <p>
+                                Устали от городского шума, хотите провести праздник за городом в живописной локации?
+                                Заказывайте место в локации «Черная жемчужина». Здесь вас и ваших детей ждет настоящая
+                                пиратская шхуна с настоящими пиратами!
+                            </p>
+                            <div class="div-line"></div>
+                            <p>
+                                Заказ от 25 до 30 человек:
+                                — Скидка 40% на аренду при заказе в будний день
+                            </p>
+                            <div class="div-line"></div>
+                            <p>
+                                Заказ от 31 до 50 человек:
+                                — Скидка 55% на аренду при заказе в будний день
+                            </p>
+                            <div class="div-line"></div>
+                            <span>
+                                Купон действует в будние дни при наличии свободных мест
+                            </span>
+                        </div>
+                        <a href="#" class="stock-link btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="stock d-flex mt-3">
+                    <div class="col-6 stock-text d-flex flex-col">
+                        <h2 class="title title-sm">
+                            Скидка до 51% при заказе услуг аниматоров. Уютное место для организации праздников «Поляна
+                            сказок»
+                        </h2>
+                        <div class="stock-body desc desc-sm">
+                            <p>
+                                Локация «Поляна сказок» расположена в живописной загородной местности на берегу чистого
+                                озера. Есть места для организации праздника как на открытом воздухе, так и под навесом.
+                            </p>
+                            <div class="div-line"></div>
+                            <p>
+                                Скидка 51% для аренды зоны в локации «Поляна сказок» при условии заказа услуг аниматоров
+                            </p>
+                            <div class="div-line"></div>
+                            <div class="advantages">
+                                <ul class="d-flex flex-col">
+                                    <li><p>безопасность (территория локации является частной и охраняется)</p></li>
+                                    <li><p>мало людей (площадь — 200 кв. м)</p></li>
+                                    <li><p>защита от насекомых (территория кемпинга обработана от клещей)</p></li>
+                                    <li><p>обустроенный тематический лагерь, в котором и взрослые найдут много
+                                        возможностей для развлечений</p></li>
+                                </ul>
+                            </div>
+                            <div class="div-line"></div>
+                            <span>
+                                Обязательна предварительная запись по телефону.
+                            </span>
+                        </div>
+                        <a href="#" class="stock-link btn">Подробнее</a>
+                    </div>
+                    <div class="col-6 stock-image prom2">
 
+                    </div>
+                </div>
+                <div class="stock d-flex mt-3">
+                    <div class="col-6 stock-image prom3">
+                        <!--                        <img src="./assets/imgs/promotions/promotion3.jpg" alt="">-->
+                    </div>
+                    <div class="col-6 stock-text d-flex flex-col">
+                        <h2 class="title title-sm">
+                            Скидка до 25%. Закажи праздник "Под ключ"
+                        </h2>
+                        <div class="stock-body desc desc-sm">
+                            <p>
+                                При выборе локации для 15 человек и больше, а также при заказе всех дополнительных услуг
+                                можно очень неплохо сэкономить!
+                            </p>
+                            <div class="div-line"></div>
+                            <p>
+                                Купон действует на следующие виды услуг:
+                            </p>
+                            <div class="div-line"></div>
+                            <p>
+                                — Скидка 25% для организации комплексного праздника для группы от 25 человек.
+                            </p>
+                            <p>
+                                — Скидка 10% для организации комплексного праздника для группы от 15 человек.
+                            </p>
+                            <div class="div-line"></div>
+                            <span>
+                                Обязательна предварительная запись по телефону.
+                            </span>
+                        </div>
+                        <a href="#" class="stock-link btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="form_sub">
-
+        <div class="container">
+            <h1 class="title title-sm">Подпишись на нашу рассылку и получай эксклюзивные предложения!</h1>
+            <form action="" method="post" class="d-flex flex-col">
+                <input type="email" class="form-control" placeholder="Email">
+                <button class="btn-sub" type="submit">
+                    ПОДПИСАТЬСЯ
+                </button>
+            </form>
+        </div>
     </section>
 </main>
 
 <footer class="footer">
-
+    <div class="container d-flex jcsb">
+        <div class="d-flex flex-col align-cent">
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <a href="tel:88001112020" class="tel-link">8 (800) 111-20-20</a>
+        </div>
+        <div class="d-flex flex-col align-cent">
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">Login</a>
+            <a href="#" class="footer-link">Sign Up</a>
+        </div>
+        <div class="d-flex flex-col align-cent">
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">News</a>
+            <a href="#" class="footer-link">Return</a>
+            <a href="#" class="footer-link">Feedback</a>
+        </div>
+       
+    </div>
 </footer>
 
 </body>
