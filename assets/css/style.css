@@ -14,6 +14,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 16px;
 }
 
@@ -498,7 +499,6 @@ header {
 }
 
 body {
-    scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
 }
